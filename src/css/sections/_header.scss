@@ -1,0 +1,16 @@
+.header {
+  height: 72px;
+  background-color: $color1;
+  display: flex;
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 11rem 1fr;
+    height: 100%;
+  }
+
+  &__item{
+    display: flex;
+    margin: auto;
+  }
+}

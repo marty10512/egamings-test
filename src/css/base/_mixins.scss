@@ -1,0 +1,32 @@
+// colors
+
+$color1: #121423;
+
+
+// mixins
+
+.main-logo{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  &:before{
+    display: block;
+    content: '';
+    margin-right: .25rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-image: url("/images/icons/ic_cards.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transform: rotate(180deg);
+  }
+}
+
+
