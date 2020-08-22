@@ -1,0 +1,51 @@
+.main-menu {
+  display: flex;
+  flex-direction: row;
+
+
+  &__button{
+    font-family: Roboto;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: bold;
+    line-height: 1.3125rem;
+    text-transform: capitalize;
+    margin-right: 1.5626rem;
+    transition: color .3s;
+
+    &:last-child{
+      margin-right: 0;
+    }
+
+    &--search{
+      margin-right: 2.6875rem;
+      height: 1.3125rem;
+      width: 1.3125rem;
+      background-image: url("images/icons/ic_search.svg");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+    &:hover{
+      color: $color2;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-menu{
+    flex-direction: column;
+    background-color: $color1;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 1rem;
+    border: 1px solid $color2;
+
+    &__button{
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  }
+}

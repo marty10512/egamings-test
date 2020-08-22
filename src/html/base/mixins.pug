@@ -1,2 +1,5 @@
 mixin mainLogo()
     .main-logo casino test
+
+mixin button(text, colored, custom_class)
+    .mixin-button(class= colored ? 'mixin-button--colored': '', class= custom_class)= text

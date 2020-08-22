@@ -1,6 +1,8 @@
 // colors
 
 $color1: #121423;
+$color2: #87E389;
+$color3: #32448C;
 
 
 // mixins
@@ -15,6 +17,7 @@ $color1: #121423;
   color: white;
   display: flex;
   flex-direction: row;
+
   &:before{
     display: block;
     content: '';
@@ -28,5 +31,41 @@ $color1: #121423;
     transform: rotate(180deg);
   }
 }
+
+.mixin-button{
+  border-radius: 6.25rem;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  border: 1px solid white;
+  transition: .3s;
+  cursor: pointer;
+  color: white;
+  padding: .3rem 1.25rem;
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+
+  &:hover{
+    color: $color2;
+    border-color: $color2;
+  }
+
+  &--colored{
+    border: 0px;
+    background-color: $color2;
+    color: black;
+    font-weight: bold;
+
+    &:hover{
+      background-color: #fff;
+      color: black;
+    }
+  }
+}
+
+
 
 

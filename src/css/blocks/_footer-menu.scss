@@ -1,0 +1,32 @@
+.footer-menu{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 10rem);
+  justify-content: center;
+
+  &__title{
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.625rem;
+    margin-bottom: 1rem;
+    color: white;
+    text-transform: capitalize;
+  }
+
+  &__item{
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    color: $color3;
+    text-transform: capitalize;
+    margin-bottom: 0.5625rem;
+    cursor: pointer;
+    transition: color .3s;
+    width: min-content;
+    white-space: nowrap;
+    &:hover{
+      color: $color2;
+    }
+  }
+}

@@ -12,5 +12,79 @@
   &__item{
     display: flex;
     margin: auto;
+    position: relative;
+
+    &--left{
+      margin-left: 0;
+      min-width: 10rem;
+    }
+
+    &--right{
+      margin-right: 0;
+
+      .mixin-button--colored{
+        margin-right: 1rem;
+      }
+
+      .mixin-button.login-btn:before{
+        display: block;
+        content: '';
+        height: 1.1875rem;
+        width: 1.1875rem;
+        background-image: url("/images/icons/ic_preson.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-right: .5rem;
+      }
+    }
+  }
+
+  &__actions{
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__mobile-button{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    color: white;
+    display: none;
+    padding-left: 1rem;
+    white-space: nowrap;
+    &:after{
+      display: block;
+      content: '';
+      background-image: url('/images/icons/ic_arrow_white.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      margin-left: .5rem;
+      width: 1.1875rem;
+      height: 1.1875rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header__mobile-button{
+    display: flex;
+  }
+
+  .header__actions{
+    flex-direction: column;
+    background-color: $color1;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 1rem;
+    border: 1px solid $color2;
+    .mixin-button--colored{
+      margin-right: 0px;
+      margin-bottom: 1rem;
+    }
   }
 }

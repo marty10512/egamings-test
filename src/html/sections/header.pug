@@ -1,8 +1,13 @@
 header.header
     .wrapper--inner
         .header__content
-            .header__item
+            .header__item.header__item--left
+                .header__mobile-button Open menu
                 include ../blocks/main-menu
             .header__item
                 +mainLogo()
-            .header__item
+            .header__item.header__item--right
+                .header__mobile-button Open menu
+                .header__actions
+                    +button('Deposit', true)
+                    +button('Log In', false, 'login-btn')
