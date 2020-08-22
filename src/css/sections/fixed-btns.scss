@@ -1,0 +1,42 @@
+.fixed-btns{
+  position: fixed;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+
+  &__item{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.44);
+    background-color: $color3;
+    cursor: pointer;
+    display: flex;
+    margin-bottom: .5rem;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+
+  &__language{
+    margin: auto;
+    height: 1.625rem;
+    width: 1.625rem;
+    background-image: url("/images/icons/ic_us_flag.svg");
+    margin: auto;
+    height: 1.625rem;
+    width: 1.625rem;
+    border-radius: 50%;
+  }
+
+  &__chat{
+    margin: .85rem 0 0 .775rem;
+    height: 1.625rem;
+    width: 1.625rem;
+    background-image: url("/images/icons/ic_chat.svg");
+    height: 1.625rem;
+    width: 1.625rem;
+  }
+}

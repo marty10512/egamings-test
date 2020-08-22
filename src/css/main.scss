@@ -1,10 +1,13 @@
 @import "base/noramlize";
 @import "base/base";
 @import "base/mixins";
+
 @import "blocks/main-menu";
 @import "blocks/partners-sec";
 @import "blocks/footer-menu";
+@import "blocks/sign-up";
 
 @import "sections/header";
 @import "sections/content";
 @import "sections/footer";
+@import "sections/fixed-btns";
