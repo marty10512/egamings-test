@@ -3,6 +3,7 @@
 $color1: #121423;
 $color2: #87E389;
 $color3: #32448C;
+$color4: #8C91BA;
 
 
 // mixins
@@ -60,7 +61,7 @@ $color3: #32448C;
     font-weight: bold;
 
     &:hover{
-      background-color: #fff;
+      background-color: $color4;
       color: black;
     }
   }

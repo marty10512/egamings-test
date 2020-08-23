@@ -1,0 +1,182 @@
+.sign-up{
+  padding-top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 32rem;
+  position: relative;
+  overflow: hidden;
+
+  &__title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    color: white;
+    margin-bottom: .8125rem;
+  }
+
+  &__text{
+    font-family: Roboto;
+    font-size: .75rem;
+    line-height: .875rem;
+    margin-bottom: .6875rem;
+    color: $color4;
+    &--link{
+      cursor: pointer;
+      transition: color .3s;
+      text-decoration: underline;
+      &:hover{
+        color: $color2;
+      }
+    }
+  }
+
+  .socials{
+    margin-bottom: .3rem;
+  }
+
+  &__wrapper{
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+
+  &__input{
+    background-color: transparent;
+    border-radius: 1rem;
+    margin-bottom: .75rem;
+    //box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid $color3;
+    padding: .5rem .875rem;
+    color: $color4;
+    font-family: Roboto;
+    font-size: .75rem;
+    line-height: .875rem;
+    &::placeholder{
+      color: inherit;
+    }
+
+    &--email{
+      width: 100%;
+    }
+
+    &--pass{
+      width: 14rem;
+      margin-right: .5rem;
+    }
+    &--promo-code{
+      width: 9.75rem;
+    }
+  }
+
+  &__group{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    &--checkbox{
+      .sign-up__text{
+        line-height: 1rem;
+      }
+    }
+  }
+
+  &__change-input-type{
+    position: absolute;
+    content: '';
+    height: 1.25rem;
+    width: .75rem;
+    background-image: url("images/icons/ic_eye.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    right: 6.75rem;
+    top: .45rem;
+    cursor: pointer;
+  }
+
+  &__question-mark{
+    position: absolute;
+    right: 11rem;
+    top: .6125rem;
+    cursor: pointer;
+    color: $color4;
+    font-family: Roboto;
+    font-size: .75rem;
+    line-height: .875rem;
+  }
+
+  &__currency{
+    border: 1px solid $color3;
+    padding: .5rem 0 .5rem .375rem;
+    border-radius: .5rem;
+    width: 5.5rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+
+    &:after{
+      content: '';
+      display: block;
+      margin: auto 0 auto .375rem;
+      height: .5rem;
+      width: 1.15rem;
+      background-image: url('/images/icons/ic_arrow.svg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  &__checkbox{
+
+    &-label {
+      height: 1rem;
+      width: 1rem;
+      background: white;
+      border: 1px solid #C0C0C1;
+      box-sizing: border-box;
+      box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      margin-right: .25rem;
+      cursor: pointer;
+    }
+    &:checked+.sign-up__checkbox-label{
+      background-image: url('images/icons/ic_checkbox.svg');
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 1rem;
+      width: 1rem;
+    }
+  }
+
+  &__register{
+    font-weight: 500;
+    margin-bottom: .5rem;
+  }
+
+  &__crystals{
+    height: 10rem;
+    width: 11rem;
+    background-image: url('images/crystals.svg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    &--top{
+      left: 0;
+      top: -5rem;
+      transform: rotate(205deg);
+    }
+    &--bottom{
+      bottom: 0;
+      right: 0;
+      transform: rotate(-10deg);
+    }
+  }
+}

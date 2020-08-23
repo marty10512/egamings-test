@@ -1,0 +1,26 @@
+.sign-up
+    h1.sign-up__title Sing up and start winning
+    .sign-up__text With your social network
+    include socials
+    .sign-up__text or
+    .sign-up__wrapper
+        input.sign-up__input.sign-up__input--email(placeholder='E-mail *')
+        .sign-up__group
+            input.sign-up__input.sign-up__input--pass(placeholder='Password *')
+            .sign-up__change-input-type
+            .sign-up__text.sign-up__currency Currency *
+        .sign-up__group
+            input.sign-up__input.sign-up__input--promo-code(placeholder='Promo-code')
+            .sign-up__question-mark ?
+        .sign-up__group.sign-up__group--checkbox
+            input.sign-up__checkbox#terms-checkbox(type='checkbox' hidden name='terms')
+            label.sign-up__checkbox-label(for='terms-checkbox')
+            .sign-up__text I agree with <a class="sign-up__text sign-up__text--link" href="#">Teame and Confidence</a>
+        .sign-up__group.sign-up__group--checkbox
+            input.sign-up__checkbox#age-confirm(type='checkbox' hidden name='age')
+            label.sign-up__checkbox-label(for='age-confirm')
+            .sign-up__text I comfirm that I’m 18 years or older
+    +button('Register', true, 'sign-up__register')
+    .sign-up__login.sign-up__text.sign-up__text--link Have an account?
+    .sign-up__crystals.sign-up__crystals--top
+    .sign-up__crystals.sign-up__crystals--bottom

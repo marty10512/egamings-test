@@ -1,0 +1,17 @@
+.socials{
+  width: 14rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__item{
+    height: 2rem;
+    width: 2rem;
+    background-image: url("/images/icons/ic_socials.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+  }
+}
