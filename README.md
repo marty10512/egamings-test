@@ -1,2 +1,2 @@
-# cd gamings-test
-# gulp
+#$cd gamings-test
+#$gulp
