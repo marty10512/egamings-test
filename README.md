@@ -1,2 +1,1 @@
-#$cd gamings-test
-#$gulp
+use command 'gulp' to build
