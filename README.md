@@ -1,0 +1,2 @@
+cd gamings-test
+gulp
